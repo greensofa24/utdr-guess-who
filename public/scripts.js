@@ -1487,6 +1487,7 @@ function navigateGame(e) {
       return;
 
     case "i":
+      if (GAME_NOTES_DIALOG.hasAttribute("open")) return;
       return toggleInspectCard(e);
 
     case "-":
